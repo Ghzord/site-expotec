@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Finder</title>
+    <link rel="stylesheet" href="style3l.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="logo.jpg">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Web Finder</h1>
+            <nav>
+                <ul>
+                    <li><a href="texte.html"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="texte1ca.html"><i class="fas fa-user-plus"></i> Cadastrar Desaparecido</a></li>
+                    <li><a href="texte2list.html"><i class="fas fa-list"></i> Lista de Desaparecidos</a></li>
+                    <li><a href="textecontato.html"><i class="fas fa-phone"></i> Contato</a></li>
+                    <li><a href="textsobre.html"><i class="fa-regular fa-circle-question"></i> Sobre nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="lista" class="desaparecidos">
+        <h2>Lista de Desaparecidos</h2>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Pesquisar por nome ou descrição...">
+            <button onclick="searchDesaparecidos()"><i class="fa fa-search" aria-hidden="true"></i> Pesquisar</button>
+        </div>
+
+        <div id="desaparecidos-list" class="cards-container"></div>
+    </section>
+
+    <!-- Modal -->
+    <div id="desaparecidoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span> <!-- Botão de fechar -->
+            <div class="modal-flex-container">
+                <img id="modalFoto" src="" alt="Foto">
+                <div class="modal-details">
+                    <h3 id="modalNome"></h3>
+                    <p><strong>Idade:</strong> <span id="modalIdade"></span></p>
+                    <p><strong>Local:</strong> <span id="modalLocal"></span></p>
+                    <p><strong>Data do Desaparecimento:</strong> <span id="modalData"></span></p>
+                    <p><strong>Último Contato:</strong> <span id="modalUltimoContato"></span></p>
+                    <p><strong>Parentesco:</strong> <span id="modalParentesco"></span></p>
+                    <p><strong>Características Físicas:</strong> <span id="modalCaracteristicas"></span></p>
+                    <p><strong>Roupas que Usava:</strong> <span id="modalRoupas"></span></p>
+                    <p><strong>Telefone para Contato:</strong> <span id="modalTelefone"></span></p>
+                    <p><strong>Descrição:</strong> <span id="modalDescricao"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Web Finder. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Web Finder | <a href="https://www.instagram.com/web.finder___2025?utm_source=qr&igsh=cWY5eGM1aW0zeXFv" target="_blank"><i
+                    class="fa-brands fa-instagram"></i> Instagram</a></p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

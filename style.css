@@ -83,7 +83,7 @@ nav ul li a:hover::after {
 
 /* Estilo do Banner */
 .banner {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('WhatsApp-Image-2024-11-02-at-12.53.06.jpeg');
+    background: linear-gradient(to bottom, #007BFF, rgba(255, 255, 255, 0.5)), url('WEBFINDER.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -332,7 +332,7 @@ nav ul li a:hover::after {
 }
 
 .acao-rapida ul li {
-    background: #f8f9fa;
+    background: #e9f7ff;
     margin: 10px 0;
     padding: 15px 20px;
     border-left: 5px solid #007BFF;
@@ -341,81 +341,7 @@ nav ul li a:hover::after {
 }
 
 
-/* Seção de Contato */
-.contato {
-    background-color: #f8f9fa;
-    color: #333;
-    text-align: center;
-    padding: 50px 20px;
-}
 
-.contato h2 {
-    font-size: 2rem;
-    color: #007BFF;
-    margin-bottom: 20px;
-}
-
-.contato p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 30px;
-}
-
-.contato form {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-group {
-    position: relative;
-    width: 100%;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 15px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    outline: none;
-}
-
-.form-group textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-.btn-enviar {
-    padding: 15px;
-    font-size: 1rem;
-    color: white;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.btn-enviar:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
-.btn-enviar:active {
-    transform: translateY(1px);
-}
 
 
 

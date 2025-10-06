@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Finder</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="logo.jpg">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Web Finder</h1>
+            <nav>
+                <ul>
+                    <li><a href="texte.html"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="texte1ca.html"><i class="fas fa-user-plus"></i> Cadastrar Desaparecido</a></li>
+                    <li><a href="texte2list.html"><i class="fas fa-list"></i> Lista de Desaparecidos</a></li>
+                    <li><a href="textecontato.html"><i class="fas fa-phone"></i> Contato</a></li>
+                    <li><a href="textsobre.html"><i class="fa-regular fa-circle-question"></i> Sobre nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="cadastrar" class="cadastro">
+            <h2>Cadastrar Desaparecido</h2>
+            <form id="desaparecido-form">
+                <input type="text" id="nome" placeholder="Nome" required />
+                <input type="number" id="idade" placeholder="Idade" required />
+                <input type="text" id="local" placeholder="Local de Desaparecimento" required />
+                <label for="data">Data do Desaparecimento :</label>
+                <input type="date" id="data" required />
+                <input type="file" id="imagem" />
+                <input type="text" id="ultimo-contato" placeholder="Último Contato" />
+                <input type="text" id="parentesco" placeholder="Parentesco" />
+                <textarea id="caracteristicas-fisicas" placeholder="Características Físicas"></textarea>
+                <textarea id="roupas" placeholder="Roupas que Usava"></textarea>
+                <input type="tel" id="telefone-contato" placeholder="Telefone de Contato" oninput="mascaraTelefone(this)" maxlength="15" required />
+                <textarea id="descricao" placeholder="Descrição"></textarea>
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <!-- Mensagem de sucesso -->
+            <div id="success-message" class="success-message" style="display: none;">
+                <h3>Cadastro concluído com sucesso!</h3>
+                <button id="verListaBtn">Ver Lista de Desaparecidos</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Web Finder. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Web Finder | <a href="https://www.instagram.com/web.finder___2025?utm_source=qr&igsh=cWY5eGM1aW0zeXFv" target="_blank"><i
+                    class="fa-brands fa-instagram"></i> Instagram</a></p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+
+    <script>
+        // Função para aplicar a máscara de telefone
+        function mascaraTelefone(input) {
+            // Remove todos os caracteres que não são números
+            let valor = input.value.replace(/\D/g, '');
+
+            // Aplica a máscara de telefone
+            if (valor.length > 2) {
+                valor = `(${valor.substring(0, 2)}) ${valor.substring(2)}`;
+            }
+            if (valor.length > 10) {
+                valor = `${valor.substring(0, 10)}-${valor.substring(10, 14)}`;
+            }
+
+            // Atualiza o valor do campo
+            input.value = valor;
+        }
+    </script>
+</body>
+
+</html>

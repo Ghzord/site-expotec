@@ -1,0 +1,310 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Corpo do site */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Seção de Desaparecidos */
+.desaparecidos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.desaparecidos h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 60%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+}
+
+/* Estilo para o campo de pesquisa */
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#locationFilter {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+/* Estilo do modal */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escurecido */
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do modal */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escurecido */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 700px; /* Largura máxima do modal */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animação de abertura do modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container flexível para a imagem e os detalhes */
+.modal-flex-container {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto verticalmente no centro */
+    gap: 30px; /* Espaço entre a imagem e o texto */
+}
+
+/* Estilo da imagem */
+#modalFoto {
+    width: 200px; /* Imagem um pouco maior */
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos detalhes */
+.modal-details {
+    flex: 1; /* Ocupa o restante do espaço */
+}
+
+/* Estilo do título */
+.modal-details h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo dos parágrafos */
+.modal-details p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Botão de fechar (X) */
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .modal-flex-container {
+        flex-direction: column; /* Empilha a imagem e os detalhes verticalmente */
+        text-align: center;
+    }
+
+    #modalFoto {
+        width: 150px;
+        height: 150px;
+    }
+
+    .modal-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .modal-details p {
+        font-size: 0.9rem;
+    }
+}
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0056b3;
+}
