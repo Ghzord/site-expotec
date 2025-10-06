@@ -1,0 +1,438 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Corpo do site */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+    color: white;
+    padding: 20px 0;
+    text-align: center; 
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+header h1 {
+    margin: 0; 
+    font-size: 2.5rem; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 10px; 
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF; 
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo do Banner */
+.banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('WhatsApp-Image-2024-11-02-at-12.53.06.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.banner .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.banner .btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.banner .btn:hover {
+    background-color: #004494;
+}
+
+/* Informações sobre desaparecidos */
+.info-desaparecidos {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.info-desaparecidos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-transform: uppercase;
+}
+
+.info-desaparecidos .info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-desaparecidos .card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-desaparecidos .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-desaparecidos .card h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.info-desaparecidos .card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Seção do Guia de Desaparecidos */
+.guia-desaparecidos {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.guia-desaparecidos h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.guia-desaparecidos p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.guia-desaparecidos .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.guia-desaparecidos iframe {
+    width: 100%;
+    max-width: 720px;
+    height: 405px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.estatisticas {
+    background-color: #e9f7ff;
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.estatisticas h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.estatisticas p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Seção de Histórias Reais */
+.historias-reais {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.historias-reais h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.historias-reais p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.historias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.historia-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.historia-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.historia-item h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.historia-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Seção de Ação Rápida */
+.acao-rapida {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.acao-rapida h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.acao-rapida p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.acao-rapida ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.acao-rapida ul li {
+    background: #f8f9fa;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-left: 5px solid #007BFF;
+    font-size: 1rem;
+    text-align: left;
+}
+
+
+/* Seção de Contato */
+.contato {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contato h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.btn-enviar {
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-enviar:active {
+    transform: translateY(1px);
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0056b3;
+}

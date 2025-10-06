@@ -1,0 +1,151 @@
+<!--By Guilherme -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="logo.jpg">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Web Finder</h1>
+            <nav>
+                <ul>
+                    <li><a href="texte.html"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="texte1ca.html"><i class="fas fa-user-plus"></i> Cadastrar Desaparecido</a></li>
+                    <li><a href="texte2list.html"><i class="fas fa-list"></i> Lista de Desaparecidos</a></li>
+                    <li><a href="textecontato.html"><i class="fas fa-phone"></i> Contato</a></li>
+                    <li><a href="textsobre.html"><i class="fa-regular fa-circle-question"></i> Quem somos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="overlay">
+            <h1>Ajude a Encontrar Pessoas Desaparecidas</h1>
+            <p>Cadastre um desaparecido ou veja a lista de desaparecidos.</p>
+            <a href="texte1ca.html" class="btn">Cadastrar</a>
+        </div>
+    </section>
+
+    <section id="info-desaparecidos" class="info-desaparecidos">
+        <h2>Situação Atual no Brasil</h2>
+        <div class="info-cards">
+            <div class="card">
+                <h3>Mais de 80 mil desaparecidos por ano</h3>
+                <p>No Brasil, milhares de pessoas desaparecem anualmente. A maioria são crianças e adolescentes.</p>
+            </div>
+            <div class="card">
+                <h3>Ajude na Busca</h3>
+                <p>Informações detalhadas aumentam as chances de reencontro. Cadastre fotos e dados importantes.</p>
+            </div>
+            <div class="card">
+                <h3>Tempo é Essencial</h3>
+                <p>Agir rapidamente é crucial. Utilize nossa plataforma para divulgar casos e alcançar mais pessoas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="guia-desaparecidos" class="guia-desaparecidos">
+        <div class="container">
+            <h2>Guia: Como Ajudar na Busca</h2>
+            <p>Saiba quais informações são mais importantes para ajudar na busca de pessoas desaparecidas.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4q6k_8BEk0E" 
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="estatisticas" class="estatisticas">
+        <div class="container">
+            <h2>Estatísticas Alarmantes</h2>
+            <p>Descubra números que mostram a realidade dos desaparecimentos no Brasil:</p>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>+80 Mil</h3>
+                    <p>Pessoas desaparecem por ano no Brasil.</p>
+                </div>
+                <div class="stat-item">
+                    <h3>60%</h3>
+                    <p>São menores de idade. Crianças e adolescentes representam a maioria.</p>
+                </div>
+                <div class="stat-item">
+                    <h3>48 Horas</h3>
+                    <p>O período mais crítico para localizar uma pessoa desaparecida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="historias-reais" class="historias-reais">
+        <div class="container">
+            <h2>Histórias Reais</h2>
+            <p>Conheça casos de pessoas que foram reencontradas graças ao esforço da comunidade.</p>
+            <div class="historias-grid">
+                <div class="historia-item">
+                    <img src="exemplo1.jpg" alt="História 1">
+                    <h3>Maria Silva</h3>
+                    <p>Maria foi localizada após 15 dias graças ao compartilhamento de informações em redes sociais.</p>
+                </div>
+                <div class="historia-item">
+                    <img src="exemplo2.jpg" alt="História 2">
+                    <h3>João Oliveira</h3>
+                    <p>João foi encontrado após sua descrição ser divulgada em cartazes por toda a cidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="acao-rapida" class="acao-rapida">
+        <div class="container">
+            <h2>Guia de Ação Rápida</h2>
+            <p>Siga estes passos para aumentar as chances de reencontro:</p>
+            <ul>
+                <li><strong>Informe as autoridades:</strong> Entre em contato com a polícia local o mais rápido possível.</li>
+                <li><strong>Divulgue nas redes sociais:</strong> Utilize fotos recentes e detalhes sobre a pessoa desaparecida.</li>
+                <li><strong>Distribua cartazes:</strong> Espalhe cartazes em áreas movimentadas.</li>
+                <li><strong>Cadastre no Web Finder:</strong> Use nossa plataforma para alcançar mais pessoas.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida, sugestão ou quer reportar algo? Preencha o formulário abaixo:</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" name="nome" placeholder="Seu Nome Completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="assunto" placeholder="Assunto da Mensagem" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Web Finder. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Web Finder | <a href="https://www.instagram.com/web.finder___2025?utm_source=qr&igsh=cWY5eGM1aW0zeXFv" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+    </footer>
+</body>
+
+</html>
