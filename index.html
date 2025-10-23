@@ -14,20 +14,21 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Web Finder</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
-                    <li><a href="texte1ca.html"><i class="fas fa-user-plus"></i> Cadastrar Desaparecido</a></li>
-                    <li><a href="texte2list.html"><i class="fas fa-list"></i> Lista de Desaparecidos</a></li>
-                    <li><a href="textecontato.html"><i class="fas fa-phone"></i> Contato</a></li>
-                    <li><a href="textsobre.html"><i class="fa-regular fa-circle-question"></i> Sobre nós</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+        <li><a href="texte1ca.html"><i class="fas fa-user-plus"></i> Cadastrar Desaparecido</a></li>
+        <li><a href="texte2list.html"><i class="fas fa-list"></i> Lista de Desaparecidos</a></li>
+        <li><a href="textecontato.html"><i class="fas fa-phone"></i> Contato</a></li>
+        <li><a href="textsobre.html"><i class="fa-regular fa-circle-question"></i> Sobre nós</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
     <section class="banner">
         <div class="overlay">
@@ -106,9 +107,20 @@
         <p>© 2025 Web Finder. Todos os direitos reservados.</p>
         <p>Desenvolvido por Web Finder | <a href="https://www.instagram.com/web.finder___2025?utm_source=qr&igsh=cWY5eGM1aW0zeXFv" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
     </footer>
+
+        <script>
+        const toggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('nav-menu');
+
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('open');
+  toggle.classList.toggle('active');
+});
+    </script>
 </body>
 
 </html>
+
 
 
 
