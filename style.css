@@ -173,7 +173,7 @@ nav ul li a:hover::after {
 
 /* Seção do Guia de Desaparecidos */
 .guia-desaparecidos {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     color: #333;
     text-align: center;
     padding: 50px 20px;
@@ -363,3 +363,4 @@ footer a:hover {
     color: #0056b3;
 
 }
+
