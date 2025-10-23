@@ -7,7 +7,7 @@
     <title>Web Finder</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="icon" href="WEBFINDER.jpg">
+    <link rel="icon" href="logo.jpg">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
             <h1>Web Finder</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="texte.html"><i class="fas fa-home"></i> Início</a></li>
                     <li><a href="texte1ca.html"><i class="fas fa-user-plus"></i> Cadastrar Desaparecido</a></li>
                     <li><a href="texte2list.html"><i class="fas fa-list"></i> Lista de Desaparecidos</a></li>
                     <li><a href="textecontato.html"><i class="fas fa-phone"></i> Contato</a></li>
@@ -32,7 +32,37 @@
             <form id="desaparecido-form">
                 <input type="text" id="nome" placeholder="Nome" required />
                 <input type="number" id="idade" placeholder="Idade" required />
-                <input type="text" id="local" placeholder="Local de Desaparecimento" required />
+             <label for="local">Estado do Desaparecimento:</label>
+<select id="local" name="local" required>
+  <option value="">Selecione o Estado</option>
+  <option value="Acre">Acre</option>
+  <option value="Alagoas">Alagoas</option>
+  <option value="Amapá">Amapá</option>
+  <option value="Amazonas">Amazonas</option>
+  <option value="Bahia">Bahia</option>
+  <option value="Ceará">Ceará</option>
+  <option value="Distrito Federal">Distrito Federal</option>
+  <option value="Espírito Santo">Espírito Santo</option>
+  <option value="Goiás">Goiás</option>
+  <option value="Maranhão">Maranhão</option>
+  <option value="Mato Grosso">Mato Grosso</option>
+  <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+  <option value="Minas Gerais">Minas Gerais</option>
+  <option value="Pará">Pará</option>
+  <option value="Paraíba">Paraíba</option>
+  <option value="Paraná">Paraná</option>
+  <option value="Pernambuco">Pernambuco</option>
+  <option value="Piauí">Piauí</option>
+  <option value="Rio de Janeiro">Rio de Janeiro</option>
+  <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+  <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+  <option value="Rondônia">Rondônia</option>
+  <option value="Roraima">Roraima</option>
+  <option value="Santa Catarina">Santa Catarina</option>
+  <option value="São Paulo">São Paulo</option>
+  <option value="Sergipe">Sergipe</option>
+  <option value="Tocantins">Tocantins</option>
+</select>
                 <label for="data">Data do Desaparecimento :</label>
                 <input type="date" id="data" required />
                 <input type="file" id="imagem" />
@@ -50,6 +80,14 @@
                 <h3>Cadastro concluído com sucesso!</h3>
                 <button id="verListaBtn">Ver Lista de Desaparecidos</button>
             </div>
+
+            <div id="loading-overlay" class="loading-overlay" style="display: none;">
+    <div class="loading-box">
+        <i class="fas fa-spinner fa-spin"></i>
+        <p>Carregando cadastro, aguarde...</p>
+    </div>
+</div>
+
         </section>
     </main>
 
@@ -82,7 +120,3 @@
 </body>
 
 </html>
-
-
-
-
