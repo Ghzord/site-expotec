@@ -147,7 +147,7 @@ nav ul li a:hover::after {
 }
 
 .info-desaparecidos .card {
-    background-color: #f8f9fa;
+    background-color: #e9f7ff;;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -361,4 +361,5 @@ footer a {
 
 footer a:hover {
     color: #0056b3;
+
 }
