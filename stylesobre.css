@@ -95,7 +95,7 @@ nav ul li a:hover::after {
 
 /* Seção "Equipe" */
 .equipe {
-    padding: 60px 20px;  /* Aumentei o padding para dar mais espaço */
+    padding: 60px 20px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -112,15 +112,16 @@ nav ul li a:hover::after {
     gap: 20px;
 }
 
-/* Card maior */
+/* Card horizontal */
 .card {
     background-color: #f8f9fa;
     border: 1px solid #ddd;
     border-radius: 10px;
-    width: 100%;  /* O card vai ocupar 100% da largura do seu contêiner */
-    max-width: 1400px;  /* Aumentei o tamanho máximo do card */
-    padding: 0;  /* Removi o padding para a imagem ocupar mais espaço */
-    text-align: center;
+    width: 100%; /* O card vai ocupar 100% da largura do seu contêiner */
+    max-width: 1400px; /* Aumentei o tamanho máximo do card */
+    display: flex; /* Layout flex para deixar horizontal */
+    align-items: center;
+    padding: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -130,26 +131,32 @@ nav ul li a:hover::after {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Aumentando o tamanho da imagem para ocupar mais espaço */
+/* A imagem ficará à esquerda e será bem grande */
 .card img {
-    width: 100%; /* A imagem vai ocupar toda a largura do card */
-    height: 500px; /* Defini uma altura fixa para garantir que a imagem não se distorça */
-    object-fit: cover;  /* A imagem vai cobrir o espaço sem distorcer */
-    border-radius: 10px 10px 0 0; /* Borda arredondada apenas na parte superior */
+    width: 50%; /* A imagem ocupa 50% da largura do card */
+    height: auto;
+    object-fit: cover; /* A imagem vai cobrir a área sem distorcer */
+    border-radius: 10px 0 0 10px; /* Borda arredondada no lado esquerdo */
 }
 
-/* Estilos de título e descrição */
+/* Estilos do texto à direita */
+.card .text-container {
+    padding: 20px;
+    text-align: left; /* Alinhamento à esquerda */
+    width: 50%; /* O texto ocupa os 50% restantes */
+}
+
 .card h3 {
-    font-size: 2rem; /* Aumentei o tamanho do título */
+    font-size: 2rem;
     color: #007BFF;
-    margin-top: 20px; /* Mais espaçamento acima do título */
+    margin-top: 0;
 }
 
 .card p {
-    font-size: 1.2rem;  /* Tamanho maior para a descrição */
+    font-size: 1.2rem;
     color: #555;
     line-height: 1.6;
-    margin-top: 10px; /* Distância entre o título e a descrição */
+    margin-top: 10px;
 }
 
 footer {
@@ -238,5 +245,6 @@ footer a:hover {
     display: block;
   }
 }
+
 
 
