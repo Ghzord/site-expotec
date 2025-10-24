@@ -95,13 +95,13 @@ nav ul li a:hover::after {
 
 /* Seção "Equipe" */
 .equipe {
-    padding: 60px 20px;
+    padding: 60px 20px; /* Diminui o padding para um espaço mais compacto */
     background-color: #ffffff;
     text-align: center;
 }
 
 .equipe h2 {
-    font-size: 2.5rem; /* Tamanho do título ajustado */
+    font-size: 2.5rem;
     color: #007BFF;
     margin-bottom: 30px;
 }
@@ -110,15 +110,16 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 0 10px; /* Adiciona padding nas laterais para não grudar na borda */
 }
 
-/* Card horizontal com tamanho reduzido */
+/* Card horizontal com tamanho mais compacto */
 .card {
     background-color: #f8f9fa;
     border: 1px solid #ddd;
     border-radius: 10px;
     width: 100%; /* O card vai ocupar 100% da largura do seu contêiner */
-    max-width: 900px; /* Reduzindo o tamanho máximo do card */
+    max-width: 700px; /* Diminuindo a largura máxima do card para 700px */
     display: flex; /* Layout flex para deixar horizontal */
     align-items: center;
     padding: 0;
@@ -147,13 +148,13 @@ nav ul li a:hover::after {
 }
 
 .card h3 {
-    font-size: 1.8rem; /* Ajustei o tamanho do título */
+    font-size: 1.8rem;
     color: #007BFF;
     margin-top: 0;
 }
 
 .card p {
-    font-size: 1.1rem; /* Ajustei o tamanho da descrição */
+    font-size: 1.1rem;
     color: #555;
     line-height: 1.6;
     margin-top: 10px;
@@ -244,6 +245,7 @@ footer a:hover {
     display: block;
   }
 }
+
 
 
 
