@@ -112,14 +112,14 @@ nav ul li a:hover::after {
     gap: 10px;
 }
 
-/* Aumentando o card */
+/* Card horizontal com tamanho ajustado */
 .card {
     background-color: #f8f9fa;
     border: 1px solid #ddd;
     border-radius: 10px;
-    width: 100%; /* O card vai ocupar 100% da largura do seu contêiner */
-    max-width: 750px; /* Aumentando o tamanho máximo do card para 750px */
-    display: flex; /* Layout flex para deixar horizontal */
+    width: 100%;
+    max-width: 750px;
+    display: flex;
     align-items: center;
     padding: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -133,7 +133,7 @@ nav ul li a:hover::after {
 
 /* A imagem agora ocupa 45% da largura do card */
 .card img {
-    width: 45%; /* Aumentando a imagem para ocupar 45% */
+    width: 45%; /* A imagem ocupa 45% da largura do card */
     height: auto;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
@@ -143,7 +143,7 @@ nav ul li a:hover::after {
 .card .text-container {
     padding: 20px;
     text-align: left;
-    width: 55%; /* O texto ocupa os 55% restantes */
+    width: 55%;
 }
 
 .card h3 {
@@ -152,13 +152,15 @@ nav ul li a:hover::after {
     margin-top: 0;
 }
 
+/* Ajustar o estilo para os nomes */
 .card p {
     font-size: 1.1rem;
     color: #555;
     line-height: 1.6;
     margin-top: 10px;
+    white-space: pre-line; /* Garante que o <br> seja respeitado */
+    text-align: left; /* Alinha o texto à esquerda */
 }
-
 footer {
     text-align: center;
     background-color: #007BFF;
@@ -244,6 +246,7 @@ footer a:hover {
     display: block;
   }
 }
+
 
 
 
