@@ -95,30 +95,30 @@ nav ul li a:hover::after {
 
 /* Seção "Equipe" */
 .equipe {
-    padding: 40px 20px; /* Menos espaço para diminuir o card */
+    padding: 40px 20px;
     background-color: #ffffff;
     text-align: center;
 }
 
 .equipe h2 {
-    font-size: 2rem; /* Ajustei o título para um tamanho mais proporcional */
+    font-size: 2.5rem; /* Tamanho do título maior */
     color: #007BFF;
-    margin-bottom: 20px; /* Menos espaçamento abaixo do título */
+    margin-bottom: 20px;
 }
 
 .cards-container {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Reduzi o espaçamento entre os cards */
+    gap: 10px;
 }
 
-/* Card horizontal com tamanho bem menor */
+/* Card horizontal com tamanho ajustado */
 .card {
     background-color: #f8f9fa;
     border: 1px solid #ddd;
     border-radius: 10px;
     width: 100%; /* O card vai ocupar 100% da largura do seu contêiner */
-    max-width: 500px; /* Reduzi ainda mais o tamanho máximo do card para 500px */
+    max-width: 600px; /* Aumentando o tamanho máximo do card para 600px */
     display: flex; /* Layout flex para deixar horizontal */
     align-items: center;
     padding: 0;
@@ -131,11 +131,11 @@ nav ul li a:hover::after {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* A imagem ocupa um espaço menor */
+/* A imagem ocupa mais espaço */
 .card img {
-    width: 35%; /* A imagem ocupa agora 35% da largura do card */
+    width: 40%; /* A imagem ocupa agora 40% da largura do card */
     height: auto;
-    object-fit: cover; /* A imagem vai cobrir a área sem distorcer */
+    object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
 
@@ -143,17 +143,17 @@ nav ul li a:hover::after {
 .card .text-container {
     padding: 20px;
     text-align: left;
-    width: 65%; /* O texto ocupa os 65% restantes */
+    width: 60%; /* O texto ocupa os 60% restantes */
 }
 
 .card h3 {
-    font-size: 1.5rem; /* Tamanho do título ajustado para caber melhor */
+    font-size: 1.7rem; /* Tamanho do título um pouco maior */
     color: #007BFF;
     margin-top: 0;
 }
 
 .card p {
-    font-size: 1rem; /* Tamanho do texto ajustado */
+    font-size: 1.1rem; /* Ajustei o tamanho da descrição para ser mais legível */
     color: #555;
     line-height: 1.6;
     margin-top: 10px;
@@ -244,6 +244,7 @@ footer a:hover {
     display: block;
   }
 }
+
 
 
 
